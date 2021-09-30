@@ -1,5 +1,5 @@
 node {
-  name: "data"
+  name: "Data"
   op: "Placeholder"
   attr {
     key: "dtype"
@@ -89,7 +89,7 @@ node {
   name: "conv1_h/Conv2D"
   op: "Conv2D"
   input: "Pad"
-  input: "conv1_h/weights"
+  input: "conv1_h/weightasf"
   attr {
     key: "dilations"
     value {
@@ -657,6 +657,7 @@ node {
 node {
   name: "layer_256_1_conv1/Conv2D"
   op: "Conv2D"
+op
   input: "Pad_1"
   input: "layer_256_1_conv1/weights"
   attr {
